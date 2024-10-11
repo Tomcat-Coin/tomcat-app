@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#fan {
+    border-radius: 50%;
+    /* Makes the image round */
+    animation: rotateImage 0.1s linear infinite;
+    /* Applies the keyframes animation */
+}
+
+
